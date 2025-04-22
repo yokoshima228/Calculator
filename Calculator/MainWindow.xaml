@@ -44,8 +44,8 @@
 
             <!-- Первый ряд -->
             <Button x:Name="BtnClear" Content="C" Grid.Row="0" Grid.Column="0" Click="ClearButton_Click"/>
-            <Button x:Name="BtnPlusMinus" Content="±" Grid.Row="0" Grid.Column="1" Click="OperationButton_Click"/>
-            <Button x:Name="BtnPercent" Content="%" Grid.Row="0" Grid.Column="2" Click="OperationButton_Click"/>
+            <Button x:Name="BtnSquareRoot" Content="√" Grid.Row="0" Grid.Column="1" Click="SquareRootButton_Click"/>
+            <Button x:Name="BtnSquare" Content="²" Grid.Row="0" Grid.Column="2" Click="OperationButton_Click"/>
             <Button x:Name="BtnDivide" Content="/" Grid.Row="0" Grid.Column="3" Click="OperationButton_Click"/>
 
             <!-- Второй ряд -->

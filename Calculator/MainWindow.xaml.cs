@@ -40,6 +40,19 @@ namespace Calculator
 
         private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
+            TakeInput(sender, e);
+        }
+
+        private void SquareRootButton_Click(object sender, RoutedEventArgs e)
+        {
+            TakeInput(sender, e);
+            double result = Math.Sqrt((double)firstNumber);
+            Display.Text = result.ToString();
+            isNewOperation = true;
+        }
+
+        private void TakeInput(object sender, RoutedEventArgs e)
+        {
             Button button = (Button)sender;
             firstNumber = decimal.Parse(Display.Text);
             operation = button.Content.ToString();
@@ -70,6 +83,9 @@ namespace Calculator
                     break;
                 case "±":
                     result = firstNumber + secondNumber;
+                    break;
+                case "²":
+                    result = (decimal) Math.Pow((double) firstNumber, (double) secondNumber);
                     break;
             }
 
